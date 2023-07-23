@@ -26,7 +26,7 @@ It's very lightweight (only 10k), single file and only built with javascript.
 Only add CDN to an a script and let's go !
 ```html
 <head>
-    <script src="https://cdn.jsdelivr.net/gh/modsLabs/mod-css@main/dist/mod-css.min.js">
+    <script src="https://cdn.jsdelivr.net/gh/modsLabs/MOD-CSS-2.0.2@main/MODCSS_2.0.2.min.js">
 </head>
 ```
 
