@@ -9,7 +9,7 @@
 
 MOD-CSS is a free utility-first CSS framework for front-end development.  
 It's can be used to design web page or any website.  
-We support setting of Selector, breakpoints, flexgrid, states, any CSS properties. Also, we have our own preloader.  
+We support setting of Selector, breakpoints, flexgrid, states, any CSS properties.  
 It's very lightweight (only 10k), single file and only built with javascript. 
 
 
@@ -67,8 +67,6 @@ And many more ...
 * [4. Set States on any component](#sta)
 * [5. Call any style](#prop)
 * [6. Tips](#tip)
-* [7. Enable preloader](#prel)
-* [7. Enable preloader](#prel)
 
 
 ### Selector 
@@ -300,7 +298,7 @@ For best layout, use them sparingly because in most cases percentage values give
 > We combine flexbox habilities of row with justify-content property.  
 
 ```html
-<div :mod="row[100%]" :box="jus.co[space-evenly]">
+<div :mod="row[100%]" :box="ju.co[space-evenly]">
     <div :mod="col[auto]"></div>
     <div :mod="col[auto]"></div>
 </div>
