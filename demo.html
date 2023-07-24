@@ -11,7 +11,7 @@
     <meta name="msvalidate.01" content="96BB00B2D0EE4DBE2187D8494493E4BA" />
     <link rel="shortcut icon" href="./static/img/logo-modCSS.png"/>
 
-    <title>{{ title }}</title>
+    <title>MOD-CSS Framework | Demonstration & Exemples</title>
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -60,12 +60,12 @@
         <a class="btn btn-none dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class='bx bx-menu bx-sm'></i></a>
         <ul class="dropdown-menu" :box="p[4px !important] bg[#202020]" :var=".dropdown-item { co[#f4f4f4] && hover[lightblue] }">
           <li><a class="dropdown-item" href="https://mod-css.com/demo/">Demo</a></li>
-          <li><a class="dropdown-item" href="https://cdn.jsdelivr.net/gh/modsLabs/MOD-CSS-2.0.2/">Github</a></li>
+          <li><a class="dropdown-item" href="https://cdn.jsdelivr.net/gh/modsLabs/MOD-CSS-2.0.2//">Github</a></li>
           <li><a class="dropdown-item" href="https://mod-css.com/summary/">Docs</a></li>
           <li><a class="dropdown-item" href="https://mod-css.com/presets/">Presets</a></li>
           <li><a class="dropdown-item" href="https://mod-css.com/all-props/">Find props</a></li>
           <li><hr class="dropdown-divider"></li>
-          <li class=""><a class="btn btn-primary d-block mx-1" href=https://cdn.jsdelivr.net/gh/modsLabs/MOD-CSS-2.0.2@main/MODCSS_2.0.2.min.js">Download<i class='bx bx-download mx-1'></i></a></li>
+          <li class=""><a class="btn btn-primary d-block mx-1" href="https://cdn.jsdelivr.net/gh/modsLabs/MOD-CSS-2.0.2@main/MODCSS_2.0.2.min.js/">Download<i class='bx bx-download mx-1'></i></a></li>
         </ul>
       </div>
     </div>
@@ -105,7 +105,14 @@
                   <div class="codeblock p-0">
                       <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
                       <pre class="scr" data-language="html">
-                          <code>{{flx0}}</code>
+                          <code>
+    &lt;div :mod="row[100%]"&gt;
+        &lt;div :mod="col[5.4rem]"&gt;5.4rem&lt;/div&gt;
+        &lt;div :mod="col[100px]"&gt;100px&lt;/div&gt;
+        &lt;div :mod="col[25%]"&gt;25%&lt;/div&gt;
+        &lt;div :mod="col[auto]"&gt;auto&lt;/div&gt;
+    &lt;/div&gt;
+                          </code>
                       </pre>
                   </div>
   
@@ -126,7 +133,14 @@
                   <div class="codeblock">
                       <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
                       <pre class="scr" data-language="html">
-                          <code>{{flx4}}</code>
+                          <code>
+    &lt;div :mod="row[100% 10px]"&gt;
+        &lt;div :mod="col[auto]"&gt;auto&lt;/div&gt;
+        &lt;div :mod="col[auto]"&gt;auto&lt;/div&gt;
+        &lt;div :mod="col[auto]"&gt;auto&lt;/div&gt;
+        &lt;div :mod="col[auto]"&gt;auto&lt;/div&gt;
+    &lt;/div&gt;                        
+                          </code>
                       </pre>
                   </div>
   
@@ -144,7 +158,13 @@
                   <div class="codeblock">
                       <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
                       <pre class="scr" data-language="html">
-                          <code>{{flx1}}</code>
+                          <code>
+    &lt;div :mod="row[fit]"&gt;
+        &lt;div :mod="col[5rem]"&gt;5rem&lt;/div&gt;
+        &lt;div :mod="col[25%]"&gt;25%&lt;/div&gt;
+        &lt;div :mod="col[auto]"&gt;auto&lt;/div&gt;
+    &lt;/div&gt;
+                          </code>
                       </pre>
                   </div>
   
@@ -163,7 +183,14 @@
                   <div class="codeblock">
                       <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
                       <pre class="scr" data-language="html">
-                          <code>{{flx2}}</code>
+                          <code>
+    &lt;div :mod="row[100%]"&gt;
+        &lt;div :mod="col[auto 5%]"&gt;auto offset 5%&lt;/div&gt;
+        &lt;div :mod="col[fit 15%]"&gt;fit with offset 15%&lt;/div&gt;
+        &lt;div :mod="col[250px]"&gt;250px&lt;/div&gt;
+        &lt;div :mod="col[10vmax]"&gt;10vmax&lt;/div&gt;
+    &lt;/div&gt;
+                          </code>
                       </pre>
                   </div>
   
@@ -186,7 +213,9 @@
                   <div class="codeblock">
                       <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
                       <pre data-language="html" class="scr">
-                          <code>{{brk1}}</code>
+                          <code>
+    &lt;input :box="w[100%] || lg? w[55%]" type="text" placeholder="Type here"&gt;
+                          </code>
                       </pre>
                   </div>
               </div><!-- pseudos -->
@@ -205,7 +234,13 @@
                   <div class="codeblock">
                       <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
                       <pre data-language="html" class="scr">
-                          <code>{{brk2}}</code>
+                          <code>
+    &lt;div :mod="row[100%]"&gt;
+        &lt;div :mod="col[100%] || md? col[37.5%] || lg? col[50%]"&gt;col&lt;/div&gt;
+        &lt;div :mod="col[100%] || md? col[37.5%] || lg? col[50%]"&gt;col&lt;/div&gt;
+        &lt;div :mod="col[100%] || md? col[25%]" :box="lg? dsp[none]"&gt;col&lt;/div&gt;
+    &lt;/div&gt;
+                                              </code>
                       </pre>
                   </div>
               </div><!-- pseudos -->
@@ -217,7 +252,7 @@
           <p>You can also use <span :box="fo.sy[italic]"> focus, active </span> and all others pseudos-classes.</p>
           <section><!-- states -->
               <div :mod="row[100% 1%]" class="card-dark">
-                  <div :mod="col[100%] || lg? col[40%]">
+                  <div :mod="col[100%]">
                       <p class="mb-2"><small>
                           On bootstrap button, we change background, color and border on hover.
                       </small></p>    
@@ -225,16 +260,18 @@
                   </div>
 
   
-                  <div :mod="col[100%] || lg? col[59%]" class="codeblock">
+                  <div :mod="col[100%]" class="codeblock">
                       <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
                     <pre data-language="html" class="scr">
-                          <code>{{ps1}}</code>
+                          <code>
+    &lt;button class="btn btn-success" :box="hover: bg[purple] co[lightblue] bd[none]"&gt;..&lt;/button&gt;                        
+                          </code>
                       </pre>
                   </div>
               </div>
 
               <div :mod="row[100% 1%]" class="card-dark">
-                  <div :mod="col[100%] || lg? col[40%]">
+                  <div :mod="col[100%]">
                       <p class="mb-2"><small>
                           On checked, we change background-color.
                       </small></p>    
@@ -244,16 +281,18 @@
 
                   </div>
    
-                  <div :mod="col[100%] || lg? col[59%]" class="codeblock">
+                  <div :mod="col[100%]" class="codeblock">
                       <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
                        <pre data-language="html" class="scr">
-                          <code>{{ps2}}</code>
+                          <code>
+    &lt;input type="checkbox" :box="w*h[32px] ... && checked: bg[#3137fd80]"&gt;                       
+                          </code>
                       </pre>
                   </div>
               </div>
 
               <div :mod="row[100% 1%]" class="card-dark">
-                  <div :mod="col[100%] || lg? col[40%]">
+                  <div :mod="col[100%]">
                       <p class="mb-2"><small>
                           When input is focused, we set background-color to transparent and bottom line in blue.
                       </small></p>    
@@ -262,10 +301,12 @@
 
                   </div>
   
-                  <div :mod="col[100%] || lg? col[59%]" class="codeblock">
+                  <div :mod="col[100%]" class="codeblock">
                       <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
                        <pre data-language="html" class="scr">
-                          <code>{{ps3}}</code>
+                          <code>
+    &lt;input class="input-line" :box="focus: bg[none] bd.co[blue]" type="text"  ..&gt;                        
+                          </code>
                       </pre>
                   </div>
               </div>
@@ -281,7 +322,7 @@
           </p>
           <section><!-- selector -->
               <div :mod="row[100% 1%]" class="card-dark">
-                  <div :mod="col[100%] || lg? col[40%]">
+                  <div :mod="col[100%]">
                       <p class="mb-2"><small>
                           We've created a class who design a special input with only bottom line like google Material.
                       </small></p>    
@@ -289,16 +330,23 @@
                       <input class="input-line" :box="w[100% !important] && focus: bg[none] bd.co[gold]" type="text" placeholder="Type here">
                   </div>
   
-                  <div :mod="col[100%] || lg? col[59%]" class="codeblock">
-                      <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
-                  <pre data-language="html" class="scr">
-                          <code>{{sl2}}</code>
+                  <div :mod="col[100%]" class="codeblock">
+                    <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
+                    <pre data-language="html" class="scr">
+                          <code>
+    // 1st. Create new class
+    &lt;div :var=".input-line { w[100% !important] m.tp[6px] p[.3rem] p.lf[1rem] h[35px] co[lightgray] bg[#90909010] ot*bd[none] 
+        bd.bt[1px solid gray] && focus: bg[none] bd.co[gold] }"&gt;&lt;/div&gt;
+    
+    // 2nd. Set class on element
+    &lt;input class="input-line"  type="text" placeholder="Type here"&gt;
+                        </code>
                       </pre>
                   </div>
               </div>
 
               <div :mod="row[100% 1%]" class="card-dark">
-                  <div :mod="col[100%] || lg? col[40%]">
+                  <div :mod="col[100%]">
                       <p class="mb-2"><small>
                           On checked, we change background-color.
                       </small></p>    
@@ -312,16 +360,28 @@
                       </ul>
                   </div>
   
-                  <div :mod="col[100%] || lg? col[59%]" class="codeblock">
+                  <div :mod="col[100%]" class="codeblock">
                       <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
-                  <pre data-language="html" class="scr">
-                          <code>{{sl1}}</code>
+                    <pre data-language="html" class="scr">
+                          <code>
+    1. Set selector
+    &lt;div :var="li { p[4px 6px] m.bt[2px] }"&gt;&lt;/div&gt;
+    &lt;div :var="li:nth-child(even) { bg[#202020] co[#f4f4f4] }"&gt;&lt;/div&gt;
+    &lt;div :var="li:nth-child(odd) { bg[lightblue] co[blue] }"&gt;&lt;/div&gt;
+
+    2. Create your elements
+    &lt;ul :box="ls[none]"&gt;
+        {% for x in '123456' %}
+        &lt;li&gt;Line {{ x }}&lt;/li&gt;
+        {% endfor %}
+    &lt;/ul&gt;
+                          </code>
                       </pre>
                   </div>
               </div>
 
               <div :mod="row[100% 1%]" class="card-dark">
-                  <div :mod="col[100%] || lg? col[40%]" class="ex">
+                  <div :mod="col[100%]" class="ex">
                       <p class="mb-2"><small>
                           We've updated hover's properties of a Bootstrap button.
                       </small></p>    
@@ -330,16 +390,19 @@
 
                   </div>
   
-                  <div :mod="col[100%] || lg? col[59%]" class="codeblock">
+                  <div :mod="col[100%]" class="codeblock">
                       <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
                       <pre data-language="html" class="scr">
-                          <code>{{sl3}}</code>
+                          <code>
+    // Update and setting classes
+    &lt;button class="btn btn-primary" :var=".btn-primary:hover { bg[#0f256e] co[lightblue] bx.sh[0px 2px 3px 1px #12ace930] }"&gt; Primary&lt;/button&gt;
+                            </code>
                       </pre>
                   </div>
               </div>
 
               <div :mod="row[100% 1%]" class="card-dark">
-                  <div :mod="col[100%] || lg? col[40%]" class="ex">
+                  <div :mod="col[100%]" class="ex">
                       <p class="mb-2"><small>
                           We've updated background-color and some effects of a Bootstrap button.
                       </small></p>    
@@ -348,25 +411,70 @@
                       <div></div>
                   </div>
   
-                  <div :mod="col[100%] || lg? col[59%]" class="codeblock">
+                  <div :mod="col[100%]" class="codeblock">
+                    <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
                       <pre data-language="html" class="scr">
-                          <code>{{sl4}}</code>
+                          <code>
+    // Update and setting classes
+    &lt;div :var=".btn-secondary{ bg[#EC3883] bd[none] && focus*hover: bg[#EC388380] co[pink] bx.sh[0px 2px 3px 1px #ea10a580]}"&gt;&lt;/div&gt;
+    
+    // or set ID or any other selector
+    &lt;div :var="#btn{ bg[#EC3883] bd[none] && focus*hover: bg[#EC388380] co[pink] bx.sh[0px 2px 3px 1px #ea10a580]}"&gt;&lt;/div&gt;
+    
+    // HTML Element
+    &lt;button class="btn btn-secondary" id="btn"&gt;Secondary&lt;/button&gt;
+                          </code>
                       </pre>
                   </div>
               </div>
+
+
+              <div :mod="row[100% 1%]" class="card-dark">
+                <div :mod="col[100%]">
+                    <p class="m-2">
+                        <small>
+                        MOD-CSS remove all <mark class="unit">:var</mark> attributes with their value after rendering. So, we keep your setup in safe.
+                        <br>Only your selectors configured on <mark class="unit">:box</mark> attributes are kept after rendering.
+                    </small></p>    
+                </div>
+
+                <div :mod="col[100%]" class="codeblock">
+                    <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
+                <pre data-language="html" class="scr">
+                        <code>
+  // Your setup in your HTML
+  &lt;div :var=".input-line { w[100% !important] m.tp[6px] p[.3rem] p.lf[1rem] h[35px] co[lightgray] bg[#90909010] }"&gt;&lt;/div&gt;
+  
+  // After rendering on client
+  &lt;div&gt;&lt;/div&gt;
+                      </code>
+                    </pre>
+                </div>
+            </div>
+
           </section>
           <hr>
 
           <h3 >Height & Width</h3>
           <section :mod="row[100% 1%]" class="card-dark">
-              <div :mod="col[100%] || lg? col[49%]">
-                  <p :box="bg[#70707050] h[30px] w[90%]">{% lorem 10 w %}</p>
-                  <p :box="bg[#70707050] h[auto] w[400px]">{% lorem 10 w %}</p>
+              <div :mod="col[100%]">
+                  <p :box="bg[#70707050] h[30px] w[90%]">lorem ipsum dolor sit amet consectetur adipisicing elit sed do</p>
+                  <p :box="bg[#70707050] h[auto] w[400px]">lorem ipsum dolor sit amet consectetur adipisicing elit sed do</p>
                   <p :box="bg[#70707050] h*w[50px]">lorem</p>
               </div>
-              <div :mod="col[100%] || lg? col[50%]" class="codeblock">
+              <div :mod="col[100%]" class="codeblock">
+                <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
                   <pre data-language="html" class="scr">
-                      <code>{{g_cd7}}</code>
+                      <code>
+    // height 30px, width 90%
+    &lt;p :box="h[30px] w[90%]"&gt;lorem ipsum dolor ...&lt;/p&gt;
+                
+        // height auto, width 400px
+    &lt;p :box="h[auto] w[400px]"&gt;lorem ipsum dolor ...&lt;/p&gt;  
+        
+        // set height & width in once
+    &lt;p :box="h*w[40px]"&gt;lorem&lt;/p&gt;
+                      </code>
                   </pre>
               </div>
           </section>
@@ -374,14 +482,24 @@
 
           <h3 >Margin</h3>
           <section :mod="row[100% 1%]" class="card-dark">
-              <div :mod="col[100%] || lg? col[49%]">
-                  <p :size="m.lf[30px]">{% lorem 10 w %}</p>
-                  <p :size="m.rg[30px]">{% lorem 10 w %}</p>
-                  <p :size="m[30px 15px]">{% lorem 10 w %}</p>
+              <div :mod="col[100%]">
+                  <p :size="m.lf[30px]">lorem ipsum dolor sit amet consectetur adipisicing elit sed do</p>
+                  <p :size="m.rg[30px]">lorem ipsum dolor sit amet consectetur adipisicing elit sed do</p>
+                  <p :size="m[30px 15px]">lorem ipsum dolor sit amet consectetur adipisicing elit sed do</p>
               </div>
-              <div :mod="col[100%] || lg? col[50%]" class="codeblock">
+              <div :mod="col[100%]" class="codeblock">
+                <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
                   <pre data-language="html" class="scr">
-                      <code>{{g_cd5}}</code>
+                      <code>
+    // Margin-left
+    &lt;p :box="m.lf[30px]"&gt;lorem ipsum dolor ...&lt;/p&gt;                
+    
+    // Margin-right
+    &lt;p :box="m.rg[30px]"&gt;lorem ipsum dolor ...&lt;/p&gt;
+    
+    // Margin X & Y
+    &lt;p :box="m[30px 15px]"&gt;lorem ipsum dolor ...&lt;/p&gt;                    
+                      </code>
                   </pre>
               </div>
           </section>
@@ -389,14 +507,24 @@
 
           <h3 >Padding</h3>
           <section :mod="row[100% 1%]" class="card-dark">
-              <div :mod="col[100%] || lg? col[49%]">
-                  <p :box="bg[#70707050]" :size="p.tp[10px]">{% lorem 11 w %}</p>
-                  <p :box="bg[#70707050]" :size="p.rg[20px]">{% lorem 10 w %}</p>
-                  <p :box="bg[#70707050]" :size="p[10px]">{% lorem 11 w %}</p>
+              <div :mod="col[100%]">
+                  <p :box="bg[#70707050]" :size="p.tp[10px]">lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod</p>
+                  <p :box="bg[#70707050]" :size="p.rg[20px]">lorem ipsum dolor sit amet consectetur adipisicing elit sed do</p>
+                  <p :box="bg[#70707050]" :size="p[10px]">lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod</p>
               </div>
-              <div :mod="col[100%] || lg? col[50%]" class="codeblock">
+              <div :mod="col[100%]" class="codeblock">
+                <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
                   <pre data-language="html" class="scr">
-                      <code>{{g_cd6}}</code>
+                      <code>
+    // Padding-top
+    &lt;p  :box="p.tp[10px]"&gt;lorem ipsum dolor ...&lt;/p&gt;
+                
+        // Padding-right
+    &lt;p :box="p.rg[20px]"&gt;lorem ipsum dolor ...&lt;/p&gt;
+    
+    // Padding
+    &lt;p :box="p[10px]"&gt;lorem ipsum dolor ...&lt;/p&gt;                    
+                      </code>
                   </pre>
               </div>
           </section>
@@ -404,12 +532,28 @@
 
           <h3 >Color</h3>
           <section :mod="row[100% 1%]" class="card-dark">
-              <div :mod="col[100%] || lg? col[49%]">
-                  <p :box="co[#0d6efd]">{% lorem 10 w %}</p>
+              <div :mod="col[100%]">
+                  <p :box="co[#0d6efd]">lorem ipsum dolor sit amet consectetur adipisicing elit sed do</p>
               </div>
-              <div :mod="col[100%] || lg? col[50%]" class="codeblock">
+              <div :mod="col[100%]" class="codeblock">
+                <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
                   <pre data-language="html" class="scr">
-                      <code>{{g_cd0}}</code>
+                      <code>
+    // standard name 
+    &lt;p :box="co[blue]"&gt;lorem ipsum dolor ...&lt;/p&gt;
+    
+    // Hex Value 
+    &lt;p :box="co[#0d6efd]"&gt;lorem ipsum dolor ...&lt;/p&gt;
+    
+    // RGB or RGBA Value
+    &lt;p :box="co[rgb(13, 110, 253)]"&gt;lorem ipsum dolor ...&lt;/p&gt;
+    
+    // variable
+    &lt;p :box="co[var(--txt-title)]"&gt;lorem ipsum dolor ...&lt;/p&gt;
+    
+    // hsl and any others unit(s) supported by CSS
+    &lt;p :box="co[hsl(216, 98%, 52%)]"&gt;lorem ipsum dolor ...&lt;/p&gt;
+                      </code>
                   </pre>
               </div>
           </section>
@@ -417,14 +561,25 @@
 
           <h3 >Font</h3>
           <section :mod="row[100% 1%]" class="card-dark">
-              <div :mod="col[100%] || lg? col[49%]">
-                  <p :box="fo.sz[12px]">{% lorem 10 w %}</p>
-                  <p :box="fo.sy[italic]">{% lorem 10 w %}</p>
-                  <p :box="fo.fa[monospace] fo.wg[500] fo.sz[1.2rem]">{% lorem 10 w %}</p>
+              <div :mod="col[100%]">
+                  <p :box="fo.sz[12px]">lorem ipsum dolor sit amet consectetur adipisicing elit sed do</p>
+                  <p :box="fo.sy[italic]">lorem ipsum dolor sit amet consectetur adipisicing elit sed do</p>
+                  <p :box="fo.fa[monospace] fo.wg[500] fo.sz[1.2rem]">lorem ipsum dolor sit amet consectetur adipisicing elit sed do</p>
               </div>
-              <div :mod="col[100%] || lg? col[50%]" class="codeblock">
+              <div :mod="col[100%]" class="codeblock">
+                <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
                   <pre data-language="html" class="scr">
-                      <code>{{g_cd1}}</code>
+                      <code>
+    // Font-size 
+    &lt;p :box="fo.sz[12px]"&gt;lorem ipsum dolor ...&lt;/p&gt;
+    
+    // Font-style
+    &lt;p :box="fo.sy[italic]"&gt;lorem ipsum dolor ...&lt;/p&gt;
+    
+    // Font-family, Font-weight 
+    // Rem, em % or any others unit(s) supported by CSS 
+    &lt;p :box="fo.fa[monospace] fo.wg[500] fo.sz[1.2rem]"&gt;lorem ipsum dolor ...&lt;/p&gt;
+                      </code>
                   </pre>
               </div>
           </section>
@@ -432,13 +587,20 @@
 
           <h3 >Background</h3>
           <section :mod="row[100% 1%]" class="card-dark">
-              <div :mod="col[100%] || lg? col[49%]">
-                  <p :box="bg[lightgray]">{% lorem 10 w %}</p>
-                  <p :box="bg.co[hsla(175, 86%, 53%, 0.3)] co[#000]">{% lorem 10 w %}</p>
+              <div :mod="col[100%]">
+                  <p :box="bg[lightgray]">lorem ipsum dolor sit amet consectetur adipisicing elit sed do</p>
+                  <p :box="bg.co[hsla(175, 86%, 53%, 0.3)] co[#000]">lorem ipsum dolor sit amet consectetur adipisicing elit sed do</p>
               </div>
-              <div :mod="col[100%] || lg? col[50%]" class="codeblock">
+              <div :mod="col[100%]" class="codeblock">
+                <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
                   <pre data-language="html" class="scr">
-                      <code>{{g_cd2}}</code>
+                      <code>
+    // Background 
+    &lt;p :box="bg[lightgray]"&gt;lorem ipsum dolor ...&lt;/p&gt;
+    
+    // Background-color with any others unit(s) supported by CSS 
+    &lt;p :box="bg.co[hsla(175, 86%, 53%, 0.3)]"&gt;lorem ipsum dolor ...&lt;/p&gt;
+                    </code>
                   </pre>
               </div>
           </section>
@@ -446,13 +608,22 @@
 
           <h3 >Border</h3>
           <section :mod="row[100% 1%]" class="card-dark">
-              <div :mod="col[100%] || lg? col[49%]">
-                  <p :box="bg[#70707050] bd.wd[1px] bd.sy[solid] bd.co[gray]">{% lorem 10 w %}</p>
-                  <p :box="bd[.1em dashed #808080]">{% lorem 10 w %}</p>
+              <div :mod="col[100%]">
+                  <p :box="bg[#70707050] bd.wd[1px] bd.sy[solid] bd.co[gray]">lorem ipsum dolor sit amet consectetur adipisicing elit sed do</p>
+                  <p :box="bd[.1em dashed #808080]">lorem ipsum dolor sit amet consectetur adipisicing elit sed do</p>
               </div>
-              <div :mod="col[100%] || lg? col[50%]" class="codeblock">
+              <div :mod="col[100%]" class="codeblock">
+                <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
                   <pre data-language="html" class="scr">
-                      <code>{{g_cd3}}</code>
+                      <code>
+    // 1st Example
+    &lt;p :box="bd[1px solid gray]"&gt;lorem ipsum dolor ...&lt;/p&gt;
+    // or detailed
+    &lt;p :box="bd.wd[1px] bd.sy[solid] bd.co[gray]"&gt;lorem ipsum dolor ...&lt;/p&gt;
+
+    // 2nd example 
+    &lt;p :box="bd[.1em dashed #808080]"&gt;lorem ipsum dolor ...&lt;/p&gt;
+                      </code>
                   </pre>
               </div>
           </section>
@@ -460,13 +631,20 @@
 
           <h3 >Border-radius</h3>
           <section :mod="row[100% 1%]" class="card-dark">
-              <div :mod="col[100%] || lg? col[49%]">
-                  <p :box="bg[#70707050] br[8px]">{% lorem 10 w %}</p>
-                  <p :box="bg[#70707050] br[0 1rem]">{% lorem 10 w %}</p>
+              <div :mod="col[100%]">
+                  <p :box="bg[#70707050] br[8px]">lorem ipsum dolor sit amet consectetur adipisicing elit sed do</p>
+                  <p :box="bg[#70707050] br[0 1rem]">lorem ipsum dolor sit amet consectetur adipisicing elit sed do</p>
               </div>
-              <div :mod="col[100%] || lg? col[50%]" class="codeblock">
+              <div :mod="col[100%]" class="codeblock">
+                <span class="bx bx-copy" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy code"  ></span>
                   <pre data-language="html" class="scr">
-                      <code>{{g_cd4}}</code>
+                      <code>
+    // First
+    &lt;p :box="br[8px]"&gt;lorem ipsum dolor ...&lt;/p&gt;
+                
+    // 2nd
+    &lt;p :box="br[0 1rem]"&gt;lorem ipsum dolor ...&lt;/p&gt;
+                      </code>
                   </pre>
               </div>
           </section>
@@ -573,9 +751,10 @@
 
               <ol class="unit" :box="w[100%] ls.pos[inside] co[white]"
                   :var=".unit > li{ p[8px] m.bt[4px] bd[.25px solid #2f4a83] bg[#3d4353] br[2px] && hover: bg[#282c34] co[#808080] }">
-                  {% for x in data %}
-                  <li>{{x}}</li>
-                  {% endfor %}
+                  <li>John DOE - UK</li>
+                  <li>Dev GEOS - CI</li>
+                  <li>Jack MA - CHN</li>
+                  <li>Bill GATES - USA</li>
               </ol>
 
           </section>
@@ -588,13 +767,13 @@
                           Label hidding on edit</label>
                       <textarea rows="8" class="scr"
                           :box="m[0] p[2rem 1rem 1rem 1rem] w[100%] bg[#f2f2f220] bd[1px solid lightgray] br[6px] ot[none] co[gray] ln.h[1.5] 
-                          && focus: bg[white] bx.sh[0 0px 1px 4px #7d33ff30]">{% lorem 1p %}</textarea>
+                          && focus: bg[white] bx.sh[0 0px 1px 4px #7d33ff30]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
                   </div>
                   
                   <div :mod="col[100%] || lg? col[48%]" >
                       <textarea rows="8" class="scr"
                       :box="p[2rem 1rem 1rem 1rem] w[100%] co[gray] ot*rz[none] bg[#19875440] bd[1px solid gray] 
-                      br[6px] && focus: bg[white] ot[thick solid #195bff30]">{% lorem 1p %}</textarea>
+                      br[6px] && focus: bg[white] ot[thick solid #195bff30]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
                   </div>
               </div>
           </section>
@@ -609,13 +788,13 @@
                       <span :box="fo.sz[90%]">Card subtitle</span>
 
                       <!-- body -->
-                      <p :box="p[12px] fo.sz[1rem]">{% lorem 40 w %}</p>
+                      <p :box="p[12px] fo.sz[1rem]">lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nihil beatae optio placeat eveniet quam similique culpa officiis aspernatur numquam veritatis earum quo in fuga pariatur labore impedit quibusdam ea</p>
 
                       <!-- buttons -->
-                      <div :mod="row[100%]" :box="ju.co[space-evenly]">
-                          <a href="#" :mod="col[100%] || lg? col[49%]" :box="co[#195bff]">Back</a>
+                      <div :mod="row[100% 20px]" :box="ju.co[space-evenly]">
+                          <a href="#" :mod="col[auto]" :box="co[#195bff] tx.al[center]">Back</a>
 
-                          <button :mod="col[100%] || lg? col[49%]"
+                          <button :mod="col[auto]"
                               :box="h[1.7rem] bg[#195bff] br[4px] bd[none] cu[pointer] && hover:bg[#195bff50] co[lightgray] && hover:co[gray]"> 
                               Next </button>
                       </div>
@@ -631,7 +810,7 @@
               
                       <!-- body -->
                       <div :box="w[100%] m[5px auto]" contenteditable="true">
-                          <p>{% lorem 1 p %}</p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                       </div>
               
                       <!-- footer -->
@@ -666,11 +845,11 @@
 <div :var="div>small { fo.sz[13px] ln.h[.8]}"></div>
 <div :var=".col { bg[#80808033] fo.sz[11px] || lg? fo.sz[13px] }"></div>
 <div :var="h3 { co[var(--title-color)] }"></div>
-<div :var=".input-line { w[100%] m.tp[6px] p[.3rem] p.lf[1rem] h[35px] co[lightgray] bg[#90909010] ot*bd[none] bd.bt[1px solid gray] bx.sz[border-box] 
+<div :var=".input-line { w[85%] m.tp[6px] p[.3rem] p.lf[1rem] h[35px] co[lightgray] bg[#90909010] ot*bd[none] bd.bt[1px solid gray] bx.sz[border-box] 
   && focus: bg[none] bd.co[#505050] }"></div>
 <div :var=".codeblock { br[6px !important] }"></div>
-<div :box="h6 {m.bt[20px] co[orange]}"></div>
-<div :box="h1,h2,h3 {co[var(--title-color)]}" :var="section {m[2rem auto]}"></div>
+<div :var="h6 {m.bt[20px] co[orange]}"></div>
+<div :var="h1,h2,h3 {co[var(--title-color)]}" :var="section {m[2rem auto]}"></div>
 <div :var="a, i {val[top]}"></div>
 <div :var=".rdx:checked +label{co[#7d33ff !important]}"></div>
 <div :var=".rdw:checked +label{co[#ff8929 !important]}"></div>
@@ -684,8 +863,8 @@
 <div :var=".unit { bg[#20202050] co[#f4f4f4 !important] p[3px 4px] br[3px] }"></div>
 <div :var=".hr{ ot*bd*bg[none !important] }"></div>
 <div :var=".bx-copy { m[4px .8rem] float[right] cu[pointer] }"></div>
-<div :box="a,.bx {tx.de[none] val[middle] }" :var="hr{ m.tp[40px] bd[.5px dotted #606060]}"></div>
-<div :box=".mr-2{ m.rg[6px] }" :var=".badge{ co[blue] }"></div>
+<div :var="a,.bx {tx.de[none] val[middle] }" :var="hr{ m.tp[40px] bd[.5px dotted #606060]}"></div>
+<div :var=".mr-2{ m.rg[6px] }" :var=".badge{ co[blue] }"></div>
 <div :var=".w-100{ w[100%] }" :box="h2, h2 i {co[lightblue !important]}"></div>
 <div :var=".btn-dark{ bg[#303030] co[#999999] p[6px 8px] br[4px] bd[1px solid #40404050] }"></div>
 <div :var=".card-dark, .section { bg[#303030] bd[1px solid #40404050] co[#909090 !important] p[4px 8px] m[10px 0px] tx.al[jutify] }"></div>
