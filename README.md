@@ -1,6 +1,5 @@
 [![MOD-CSS's GitHub Banner](./static/img/Responsive-website.jpg)](https://mod-css.com)  
 
-
 [![Website](https://img.shields.io/badge/Website-informational?style=flat&logo=html5&logoColor=white&color=1CA2F1)](https://mod-css.com/) 
 [![CodePen Badge](https://img.shields.io/badge/CodePen-Profile-informational?style=flat&logo=codepen&logoColor=white&color=white)](https://codepen.io/mod-css/) 
 [![Youtube Badge](https://img.shields.io/badge/Youtube-Profile-informational?style=flat&logo=youtube&logoColor=white&color=red)](https://youtube.com/mod-css) 
@@ -8,9 +7,9 @@
 [![Javascript Badge](https://img.shields.io/badge/Single-file-informational?style=flat&logo=javascript&logoColor=yellow&color=1CA2F1)]() 
 [![Javascript Badge](https://img.shields.io/badge/Lightweight-10kb-informational?style=flat&logo=javascript&logoColor=yellow&color=4AB197)]()  
 
-MOD-CSS is a free utility-first CSS framework for front-end development.  
+MOD-CSS is a free utility CSS framework for front-end development.  
 It's can be used to design web page or any website.  
-We support setting of Selector, breakpoints, flexgrid, states, any CSS properties. Also, we have our own preloader.  
+We support setting of Selector, breakpoints, flexgrid, states, any CSS properties.  
 It's very lightweight (only 10k), single file and only built with javascript. 
 
 
@@ -24,10 +23,10 @@ It's very lightweight (only 10k), single file and only built with javascript.
 
 ## Installation
 
-Only add CDN to an a script and let's go !
+Only add CDN to an a script tag and let's go !
 ```html
 <head>
-    <script src="https://cdn.jsdelivr.net/gh/modsLabs/mod-css@main/dist/mod-css.min.js">
+    <script src="https://cdn.jsdelivr.net/gh/modsLabs/MOD-CSS-2.0.2@main/MODCSS_2.0.2.min.js">
 </head>
 ```
 
@@ -45,19 +44,13 @@ p[var(--px)]            /* ==> padding: var(--px) */
 ```html
 <div :mod="col[100px]"><div>   <!-- Use :mod to set only flexgrid props-->
 <div :box="w[100px] p[9px]"><div>    <!-- Use :box for any properties -->
+<div :box="fo.sz[10px] co[#f4f4f4]"><div>    <!-- Use :box typography properties -->
+<div :box="trn[all .3s ease] && hover: m.lf[6px]"><div>    <!-- Use for special effects or animations -->
 ```  
-3. There are many other attributes you could use to improve the readability and maintainability of your code.  
-```html
-<div :text="fo.sz[10px] co[#f4f4f4]"><div>    <!-- Use :text typography properties -->
-<div :size="w[100px] p[9px]"><div>    <!-- Use to set box and sizing -->
-<div :fx="trn[all .3s ease] && hover: m.lf[6px]"><div>    <!-- Use for special effects or animations -->
-...
-```  
-And many more ...
-[here >](https://mod-css.com/docs/core-concepts/#Custom%20attributes)  
 
-4. Cheatsheet and almost supported properties can be found [here](https://mod-css.com/docs/cheatsheet/#Cheatsheet)
+3. Cheatsheet and almost supported properties can be found [here](https://mod-css.com/documentation/cheatsheet/#Cheatsheet)
 
+---
 ---
 
 <h2 style="margin-bottom:10px">Summary </h2>
@@ -68,8 +61,6 @@ And many more ...
 * [4. Set States on any component](#sta)
 * [5. Call any style](#prop)
 * [6. Tips](#tip)
-* [7. Enable preloader](#prel)
-* [7. Enable preloader](#prel)
 
 
 ### Selector 
@@ -133,6 +124,7 @@ pre {
     font-weight: 600;
     }
 ```
+---   
 ---   
 
 ### Breakpoints
@@ -201,8 +193,9 @@ div {
     }
 }
 ```  
-[Read more >](https://mod-css.com/docs/breakpoints/)  
+[Read more >](https://mod-css.com/documentation/breakpoints/)  
 
+----
 ----
 
 ### Flexgrid
@@ -277,7 +270,7 @@ For best layout, use them sparingly because in most cases percentage values give
 ``` 
 ```html
 <!--different values - X: 2% and Y: 1%-->
-<div :mod="row[100% 2% 1%]">
+<div :mod="row[100% 2% 10px]">
     <div :mod="col[100px]"></div>
     <div :mod="col[auto]"></div>
 </div>
@@ -301,14 +294,15 @@ For best layout, use them sparingly because in most cases percentage values give
 > We combine flexbox habilities of row with justify-content property.  
 
 ```html
-<div :mod="row[100%]" :box="jus.co[space-evenly]">
+<div :mod="row[100%]" :box="ju.co[space-evenly]">
     <div :mod="col[auto]"></div>
     <div :mod="col[auto]"></div>
 </div>
 ``` 
 
-[Read more >](https://mod-css.com/docs/core-concepts/#FlexGrid)  
+[Read more >](https://mod-css.com/documentation/core-concepts/#FlexGrid)  
 
+----
 ----
 
 
@@ -355,8 +349,9 @@ With Multi states, just call ***&&*** to separe them.
 <tr :box="hover: fo.wg[700] co[#198754] bg[#0bcf8466] && nth-child(even): bg[lightgray]"></tr>
 ```
 
-[Read more >](https://mod-css.com/docs/states/)  
+[Read more >](https://mod-css.com/documentation/states/)  
 
+------
 ------
 
 ### Multi setting
@@ -379,31 +374,13 @@ button {
 ```
 
 --------------
-
-### Preloader
-<div id="prel"><div> 
-
-
-![preloader](/assets/preloader.jpg "MOD-CSS-preloader")
-
-Using of a preloader can be useful to make the user wait while the page is fully loaded.  
-This is very useful for heavyweight pages and is also aesthetically very attractive.  
-You can enable MOD-CSS preloader like below : 
-
-
-```html
-<head>
-    <script src="https://cdn.jsdelivr.net/gh/modsLabs/mod-css@main/dist/mod-css.min.js">
-    <script>setPreloader(true)</script>
-</head>
-```
 --------------
 
 ### Properties
 <div id="prop"><div> 
 
 All supported properties, can be found :   
-- [Here](https://mod-css.com/docs/core-concepts/#All%20CSS)  
-- [Cheatsheet](https://mod-css.com/docs/cheatsheet/#Cheatsheet)
+- [Here](https://mod-css.com/documentation/core-concepts/#All%20CSS)  
+- [Cheatsheet](https://mod-css.com/documentation/cheatsheet/#Cheatsheet)
 
-------
+---------------
