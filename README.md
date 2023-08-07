@@ -9,7 +9,7 @@
 
 MOD-CSS is a free utility-first CSS framework for front-end development.  
 It's can be used to design web page or any website.  
-We support setting of Selector, breakpoints, flexgrid, states, any CSS properties.  
+We support setting of Selector, breakpoints, flexgrid, states, any CSS properties. Also, we have our own preloader.  
 It's very lightweight (only 10k), single file and only built with javascript. 
 
 
@@ -26,7 +26,7 @@ It's very lightweight (only 10k), single file and only built with javascript.
 Only add CDN to an a script and let's go !
 ```html
 <head>
-    <script src="https://cdn.jsdelivr.net/gh/modsLabs/MOD-CSS-2.0.2@main/MODCSS_2.0.2.min.js">
+    <script src="https://cdn.jsdelivr.net/gh/modsLabs/mod-css@main/dist/mod-css.min.js">
 </head>
 ```
 
@@ -53,9 +53,9 @@ p[var(--px)]            /* ==> padding: var(--px) */
 ...
 ```  
 And many more ...
-[here >](https://mod-css.com/documentation/core-concepts/#Custom%20attributes)  
+[here >](https://mod-css.com/docs/core-concepts/#Custom%20attributes)  
 
-4. Cheatsheet and almost supported properties can be found [here](https://mod-css.com/documentation/cheatsheet/#Cheatsheet)
+4. Cheatsheet and almost supported properties can be found [here](https://mod-css.com/docs/cheatsheet/#Cheatsheet)
 
 ---
 
@@ -67,6 +67,8 @@ And many more ...
 * [4. Set States on any component](#sta)
 * [5. Call any style](#prop)
 * [6. Tips](#tip)
+* [7. Enable preloader](#prel)
+* [7. Enable preloader](#prel)
 
 
 ### Selector 
@@ -198,7 +200,7 @@ div {
     }
 }
 ```  
-[Read more >](https://mod-css.com/documentation/breakpoints/)  
+[Read more >](https://mod-css.com/docs/breakpoints/)  
 
 ----
 
@@ -298,13 +300,13 @@ For best layout, use them sparingly because in most cases percentage values give
 > We combine flexbox habilities of row with justify-content property.  
 
 ```html
-<div :mod="row[100%]" :box="ju.co[space-evenly]">
+<div :mod="row[100%]" :box="jus.co[space-evenly]">
     <div :mod="col[auto]"></div>
     <div :mod="col[auto]"></div>
 </div>
 ``` 
 
-[Read more >](https://mod-css.com/documentation/core-concepts/#FlexGrid)  
+[Read more >](https://mod-css.com/docs/core-concepts/#FlexGrid)  
 
 ----
 
@@ -352,7 +354,7 @@ With Multi states, just call ***&&*** to separe them.
 <tr :box="hover: fo.wg[700] co[#198754] bg[#0bcf8466] && nth-child(even): bg[lightgray]"></tr>
 ```
 
-[Read more >](https://mod-css.com/documentation/states/)  
+[Read more >](https://mod-css.com/docs/states/)  
 
 ------
 
@@ -377,11 +379,30 @@ button {
 
 --------------
 
+### Preloader
+<div id="prel"><div> 
+
+
+![preloader](/assets/preloader.jpg "MOD-CSS-preloader")
+
+Using of a preloader can be useful to make the user wait while the page is fully loaded.  
+This is very useful for heavyweight pages and is also aesthetically very attractive.  
+You can enable MOD-CSS preloader like below : 
+
+
+```html
+<head>
+    <script src="https://cdn.jsdelivr.net/gh/modsLabs/mod-css@main/dist/mod-css.min.js">
+    <script>setPreloader(true)</script>
+</head>
+```
+--------------
+
 ### Properties
 <div id="prop"><div> 
 
 All supported properties, can be found :   
-- [Here](https://mod-css.com/documentation/core-concepts/#All%20CSS)  
-- [Cheatsheet](https://mod-css.com/documentation/cheatsheet/#Cheatsheet)
+- [Here](https://mod-css.com/docs/core-concepts/#All%20CSS)  
+- [Cheatsheet](https://mod-css.com/docs/cheatsheet/#Cheatsheet)
 
 ------
