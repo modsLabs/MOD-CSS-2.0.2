@@ -384,3 +384,5 @@ All supported properties, can be found :
 - [Cheatsheet](https://mod-css.com/documentation/cheatsheet/#Cheatsheet)
 
 ---------------
+
+### If you like, give me a star. I'll appreciate it.
