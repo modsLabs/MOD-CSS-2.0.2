@@ -165,8 +165,7 @@ div {
     }
 @media only screen and (min-width: 768px) {
     div { 
-        width: 100%;
-        padding: 6px;
+        width: 80%;
     }
 }
 ```  
@@ -178,10 +177,6 @@ div {
 ```  
 ```css
 /*CSS equivalent*/
-div { 
-    width: 100%;
-    padding: 6px;
-    }
 @media only screen and (min-width: 768px) {
     div:hover { 
         width: 80%;
