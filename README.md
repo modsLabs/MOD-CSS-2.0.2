@@ -385,4 +385,4 @@ All supported properties, can be found :
 
 ---------------
 
-### If you like, give me a star. I'll appreciate it.
+### If you like, give us a star. We'll appreciate it.
