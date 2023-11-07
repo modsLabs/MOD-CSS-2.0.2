@@ -15,10 +15,13 @@ It's very lightweight (only 10k), single file and only built with javascript.
 
 > ### Our inspiration :heart:
 
-> We want to go fast when you prototype or build a webpage from scratch.   
-> We don't switch between template and stylesheet while creation processing.   
-> Sometimes, we must to use arbitrary value because predefined class don't macth with our needs.  
-> We want to extends our possibilities/design when we use ready-to-use Bootstrap, Bulma or Materialze components.
+> We want to go fast when we prototype or build a webpage from scratch.
+>   
+> We don't switch between template and stylesheet while creation processing.
+>   
+> Sometimes, we got to use arbitrary value because predefined class don't macth with our needs.
+> 
+> We want to extends our possibilities/design when we use ready-to-use Bootstrap, Bulma or Materialize components.
 
 
 ## Installation
